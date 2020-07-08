@@ -1,0 +1,40 @@
+.small-header {font-size: 18px; color: $primary;}
+.main-header {font-size: 40px; color: $dark; margin-bottom: 2rem;}
+.lead {font-size: 18px; color: rgba(39, 39, 39, 0.8); line-height: 2;}
+
+ul.list {
+    list-style-type: none;
+    padding-left: 0;
+    li {
+        position: relative;
+        &:before {
+            font-family: 'Material Icons';
+            content: "trending_flat";
+            margin-right: .5rem;
+            color: $primary;
+            position: relative;
+            top: 2px
+        }
+        + li {
+            margin-bottom: .3rem,
+        }
+    }
+}
+
+.hashtag {
+    $expansion: .35rem;
+    z-index: 1;
+    position: relative;
+    margin: 0 $expansion;
+    display: inline-block;
+    &:before {
+        top: 40%;
+        bottom: 40%;
+        background-color: $secondary;
+        content: "";
+        position: absolute;
+        left: -#{$expansion};
+        right: -#{$expansion};
+        z-index: -1;
+    }
+}
