@@ -4,7 +4,13 @@
 @import "variables";
 @import "typography";
 @import "consultoria";
+@import "campus";
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "headerAndFooter";
+@import "contacto";
+
+
+
 
 section {padding: 2rem 0;}
 
@@ -13,157 +19,21 @@ body {
     margin: 0;
 }
 
+a:hover {
+    text-decoration: none;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-areas: "header"
+    "main"
+    "footer";
+    grid-template-rows: 5rem 1fr 10rem;
+}
+
   #root {
     height: 100%;
   }
-
-  .header {
-    grid-area: header;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #d5cbfd;
-    padding: 0.5rem;
-    padding-right: 15rem;
-    overflow: hidden;
-  }
-
-  .headerLinks a:hover {
-    color: black;
-    text-shadow: .5px .5px rgba(0, 0, 0, .2);
-  }
-
-  .brand {
-    display: flex;
-    justify-content: space-evenly;
-  }
-
-  .brand a {
-    text-decoration: none;
-    margin-left: 10px;
-  }
-
-  .logoHeader{
-    margin-left: 100px;
-    position: relative;
-  }
-
-  .logoHeader img {
-    height: 15rem;
-    position: absolute;
-    top: -65px;
-  }
-
-  .headerLinks a {
-    color: black;
-    text-decoration: none;
-    margin-right: 15px;
-  }
-
-  .main {
-    grid-area: main;
-  }
-
-  .footer {
-    grid-area: footer;
-    background-color: #d5cbfd;
-    color: black;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
-
-  .logoFooter {
-      height: 14rem;
-  }
-
-  .logoFooter img {
-      height: 14rem;
-  }
-
-
-  .redes a {
-      opacity: .7;
-  }
-
-  .redes a:hover {
-      opacity: 1;
-      cursor: pointer;
-  }
-
-  .redes {
-      text-align: center;
-  }
-
-  .contactoFooter p {
-      font-size: 1.5rem;
-  }
-
-  .contactoFooter i {
-      font-size: 1.5rem;
-      margin-right: .5rem;
-  }
-
-  a {
-    text-decoration: none;
-  }
-
-  a:hover {
-    text-shadow: .5px .5px rgba(0, 0, 0, .2);
-  }
-
-/* SIDEBAR */
-
-.brand button {
-    font-size: 3rem;
-    padding: .5rem;
-    background: none;
-    border: none;
-    color: black;
-    display: none;
-  }
-
-  .sidebar {
-    position: fixed;
-    transition: all .5s;
-    transform: translateX(-31rem);
-    width: 30rem;
-    background-color: #d5cbfd;
-    height: 100%;
-    color: black;
-    padding-left: 1rem;
-    padding-top: 2rem;
-    z-index: 500;
-    display: none;
-  }
-
-  .sidebar ul{
-    list-style-type: none;
-  }
-
-  .sidebar ul li a {
-    color: black;
-    text-decoration: none;
-  }
-
-  .sidebar.open {
-    transform: translateX(0);
-  }
-
-  .sidebarCloseBoton {
-    border-radius: 50%;
-    border: .1rem black solid;
-    width: 3rem;
-    height: 3rem;
-    padding: .5rem;
-    font-size: 2rem;
-    padding-top: 0;
-    cursor: pointer;
-    position: absolute;
-    right: .5rem;
-    top: 1.5rem;
-  }
-
 
 /* CAROUSEL  */
 
@@ -298,69 +168,6 @@ body {
     width: 150px;
 }
 
-
-/* CONTACTO */
-
-.portadaContacto {
-    max-width: 1200px;
-    margin: 5rem auto;
-    color: black;
-    background-color: #d5cbfd;
-    text-align: left;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.portadaContacto a {
-    text-decoration: none;
-    color: black;
-}
-
-.infoContactoItem:hover {
-    text-shadow: .5px .5px rgba(0, 0, 0, .2);
-    cursor: pointer;
-}
-
-.imgContacto {
-    overflow: hidden;
-    height: 800px;
-    position: relative;
-}
-
-.imgContacto img {
-    opacity: .6;
-    position: absolute;
-    top: -100px;
-    left: -700px;
-    transform: scale(.9);
-
-}
-
-.infoContacto {
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 60%;
-    margin: auto;
-}
-
-.infoContacto h2 {
-    font-size: 3rem;
-}
-
-.infoContacto img{
-    width: 2.5rem;
-}
-
-.infoContacto h3 {
-    display: inline-block;
-}
-
-.infoContacto img, i {
-    margin-right: 2rem;
-}
-
 /* NO BLOG */
 
 .noBlog {
@@ -446,45 +253,6 @@ body {
     font-size: 1.2rem;
     background-color: #d5cbfd;
 }
-
-
-/* CONSULTORIAS */
-
-// .consultorias {
-//     max-width: 1200px;
-//     margin: 5rem auto;
-// }
-
-// .consultoriasContenedor {
-//     margin: 2rem;
-// }
-
-// .consultoriasTexto {
-//     margin: 2rem;
-// }
-
-// .consultoriasTexto span {
-//     color: darkorchid;
-//     font-size: 2rem;
-// }
-
-// .consultoriaItem {
-//     padding: 1rem;
-// }
-
-// .consultoriaItem h2 {
-//     font-size: 1.7rem;
-//     font-weight: 600;
-// }
-
-// .consultoriaItem span {
-//     color: darkorchid;
-//     font-size: 1.6rem;
-// }
-
-// .consultoriaItem p {
-//     font-size: 1.3rem;
-// }
 
 .contenedorSeparador {
     display: flex;

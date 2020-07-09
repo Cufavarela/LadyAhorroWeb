@@ -11,9 +11,9 @@
 </head>
 <body>
     <div class="gridContainer">
-        <header class="header">
-            <div class="logoHeader">
-                <a href="./index.html"><img src="./logoNegro.png" alt="logolady"></a>
+        <header>
+            <div class="logoWraper">
+                <a href="./index.html"><img class="logo logoHeader" src="assets/images/logoNegro.png" alt="logolady"></a>
             </div>
             <div class="brand">
                 <button onclick="openMenu()">
@@ -47,90 +47,37 @@
         </aside>
         <main class="main">
             <section class="portadaContacto">
-                <div class="imgContacto">
-                    <img src="./contactoImg.jpeg" alt="fotoContacto">
-                </div>
-                <div class="infoContacto">
-                    <a href="./contacto.html">
-                        <div id="titulo" class="infoContactoItem">
-                            <h2>Contacto</h2>
-                        </div>
-                    </a>
-                    <a href="mailto:info@ladyahorro.com">
-                        <div id="mail" class="infoContactoItem">
-                            <h3><i class="material-icons">mail</i>info@ladyahorro.com</h3>
-                        </div>
-                    </a>
-                    <a href="https://api.whatsapp.com/send?phone=541121626132">
-                        <div id="telefono" class="infoContactoItem">
-                            <h3><i class="material-icons">call</i>1121626132</h3>
-                        </div>
-                    </a>
-                    <a href="https://www.google.com/maps/place/Buenos+Aires,+CABA/@-34.6157437,-58.5733832,11z/data=!3m1!4b1!4m5!3m4!1s0x95bcca3b4ef90cbd:0xa0b3812e88e88e87!8m2!3d-34.6036844!4d-58.3815591">
-                        <div id="dire" class="infoContactoItem">
-                            <h3><i class="material-icons">room</i>Buenos Aires, Argentina.</h3>
-                        </div>
-                    </a>
-                    <a href="https://www.instagram.com/ladyahorro/">
-                        <div id="insta" class="infoContactoItem">
-                            <img src="./instagram.png"><h3>@ladyahorro</h3>
-                        </div>
-                    </a>
-                    <a href="https://www.facebook.com/Lady-Ahorro-103293524538487">
-                        <div id="face" class="infoContactoItem">
-                            <img src="./facebook.png"><h3>/Soyladyahorro</h3>
-                        </div>
-                    </a>
-                </div>
-            </section>
-            <section class="servicios">
-                <div class="gridServicios">
-                    <a href="./consultoria.html">
-                        <div class="cajaTextoServicio rounded">
-                            <img src="./servicio1.jpg" alt="servicio" class="image" />
-                            <div class="data">
-                                <h2>Consultorías</h2>
+                <section class="consutoltoria-introduccion">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h1 class="main-header">Contacto</h1>
+                                <a href="mailto:info@ladyahorro.com"><p class="lead"><i class="iconito material-icons">mail</i>info@ladyahorro.com</p></a>
+                                <a href="https://api.whatsapp.com/send?phone=541121626132"><p class="lead"><i class="iconito material-icons">call</i>1121626132</p></a>
+                                <a href="https://www.google.com/maps/place/Buenos+Aires,+CABA/@-34.6157437,-58.5733832,11z/data=!3m1!4b1!4m5!3m4!1s0x95bcca3b4ef90cbd:0xa0b3812e88e88e87!8m2!3d-34.6036844!4d-58.3815591"><p class="lead"><i class="iconito material-icons">room</i>Buenos Aires, Argentina</p></a>
+                                <a href="https://www.instagram.com/ladyahorro/"><p class="lead"><img class ="iconito imgRedesPeque" src="/assets/images/instagramVIolet.png">@Ladyahorro</p></a>
+                                <a href="https://www.facebook.com/Lady-Ahorro-103293524538487"><p class="lead"><img class ="iconito imgRedesPeque" src="/assets/images/facebookViolet.png">/Soyladyahorro</p></a>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="introduccion-image">
+                                    <img src="/assets/images/contactoImg2.jpg" alt="Lady Ahorro" class="img-fluid">
+                                </div>
                             </div>
                         </div>
-                    </a>
-                    <a href="./blog.html">
-                        <div class="cajaTextoServicio rounded">
-                            <img src="./servicio2.jpg" alt="servicio" class="image" />
-                            <div class="data">
-                                <h2>Blog</h2>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="./campus.html">
-                        <div class="cajaTextoServicio rounded">
-                            <img src="./servicio3.jpg" alt="servicio" class="image" />
-                            <div class="data">
-                                <h2>CampusLady</h2>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="./contacto.html">
-                        <div class="cajaTextoServicio rounded">
-                            <img src="./servicio4.jpg" alt="servicio" class="image" />
-                            <div class="data">
-                                <h2>Contacto</h2>
-                            </div>
-                        </div>
-                    </a>
-                </div>
+                    </div>
+                </section>
             </section>
         </main>
-        <footer class="footer">
-            <div class="logoFooter">
-                <img src="./logoNegro.png"></img>
+        <footer>
+            <div class="logoWraper">
+                <img class="logo logoFooter" src="assets/images/logoNegro.png"></img>
             </div>
             <div class="redes">
                 <h3>NUESTRAS REDES</h3>
-                <a href="https://www.facebook.com/Lady-Ahorro-103293524538487"><img class="logoRedes" src="./facebook.png"></img></a>
-                <a href="https://www.instagram.com/ladyahorro/"><img class="logoRedes" src="./instagram.png"></img></a>
+                <a href="https://www.facebook.com/Lady-Ahorro-103293524538487"><img class="logoRedes" src="assets/images/facebook.png"></img></a>
+                <a href="https://www.instagram.com/ladyahorro/"><img class="logoRedes" src="assets/images/instagram.png"></img></a>
             </div>
             <div class="contactoFooter">
-                <h3>CONTACTO</h3>
                 <p><i class="material-icons">mail</i>info@ladyahorro.com</p>
                 <p><i class="material-icons">call</i>1121626132</p>
                 <p><i class="material-icons">room</i>Buenos Aires, Argentina.</p>

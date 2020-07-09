@@ -11,9 +11,9 @@
 </head>
 <body>
     <div class="gridContainer">
-        <header class="header">
-            <div class="logoHeader">
-                <a href="./index.html"><img src="./logoNegro.png" alt="logolady"></a>
+        <header>
+            <div class="logoWraper">
+                <a href="./index.html"><img class="logo logoHeader" src="assets/images/logoNegro.png" alt="logolady"></a>
             </div>
             <div class="brand">
                 <button onclick="openMenu()">
@@ -46,87 +46,61 @@
             </ul>
         </aside>
         <main class="main">
-            <section class="portadaCampus">
-                <img src="./portadaCampus.jpg" alt="portadaCampuss">
-            </section>
-            <section class="cursosCards">
-                <div class="presentacionCursos">
-                    <h2>Bienvenidos al Campus Lady</h2>
-                    <span class="material-icons">library_books</span>
-                    <p>Encontrá ese curso que buscás, aprendé ese skill que te hace falta, entendé temas que antes te resultaban ajenos.
-                    Vivimos en un país en el que sino entendés lo que pasa a tu al rededor, podés salir perdiendo.</p>
-                    <span class="material-icons">trending_up</span>
-                    <p>Con estos cursos, trato de fomentar la educación y la inclusión financiera, si no encontrás la ayuda que necesitas en alguno de estos cursos,
-                        no dudes en contactarme, para juntos encontrar la manera de ayudarte.</p>
-                    <span class="material-icons">emoji_objects</span>
-                </div>
-                <div class="card-deck">
-                    <div class="card">
-                        <img src="./curso-dolar-mep.PNG" class="card-img-top" alt="imagencurso">
-                        <div class="card-body">
-                          <h5 class="card-title">Dolar MEP</h5>
-                          <p class="card-text">Qué es? Cómo comprarlo? Por qué es mejor que el blue?</p>
-                          <a href="https://mailchi.mp/e043c0fcf396/dolarmepladyahorro" class="btn">Más información</a>
+            <section class="consutoltoria-introduccion">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h2 class="small-header">LadyCampus</h2>
+                            <h1 class="main-header">Bienvenidos al Campus!</h1>
+                            <p class="lead">Encontrá ese curso que buscás, aprendé ese skill que te hace falta, entendé temas que antes te resultaban ajenos.
+                                Vivimos en un país en el que sino entendés lo que pasa a tu al rededor, podés salir perdiendo.</p>
+                            <p class="lead">Con estos cursos, trato de fomentar la <span>educación y la inclusión financiera</span>, si no encontrás la ayuda que necesitas en alguno de estos cursos,
+                                no dudes en contactarme, para juntos encontrar la manera de ayudarte.</p>
                         </div>
-                    </div>
-                    <div class="card">
-                        <img src="./anterior1.PNG" class="card-img-top" alt="imagencurso">
-                        <div class="card-body">
-                          <h5 class="card-title">Digitalizá tus finanzas</h5>
-                          <p class="card-text">Aprendé a manejar tus finanzas online, sin salir de tu casa. Animáte!</p>
-                          <a href="https://mailchi.mp/943e109fd57f/digitaliza-tus-finanzas-ladyahorro" class="btn">Más información</a>
+                        <div class="col-md-6">
+                            <div class="introduccion-image">
+                                <img src="/assets/images/fotolady.jpeg" alt="Lady Ahorro" class="img-fluid">
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="servicios">
-                <div class="gridServicios">
-                    <a href="./consultoria.html">
-                        <div class="cajaTextoServicio rounded">
-                            <img src="./servicio1.jpg" alt="servicio" class="image" />
-                            <div class="data">
-                                <h2>Consultorías</h2>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="./blog.html">
-                        <div class="cajaTextoServicio rounded">
-                            <img src="./servicio2.jpg" alt="servicio" class="image" />
-                            <div class="data">
-                                <h2>Blog</h2>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="./campus.html">
-                        <div class="cajaTextoServicio rounded">
-                            <img src="./servicio3.jpg" alt="servicio" class="image" />
-                            <div class="data">
-                                <h2>CampusLady</h2>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="./contacto.html">
-                        <div class="cajaTextoServicio rounded">
-                            <img src="./servicio4.jpg" alt="servicio" class="image" />
-                            <div class="data">
-                                <h2>Contacto</h2>
-                            </div>
-                        </div>
-                    </a>
+            <div class="container campus-grid">
+                <div class="campus-item has-image">
+                    <img class="" src="/assets/images/curso-dolar-mep.png">
                 </div>
-            </section>
+                <div class="campus-item">
+                    <div class="">
+                        <span class="iconito material-icons">attach_money</span>
+                        <h2>Dolar MEP</h2>
+                        <p>Qué es? Cómo comprarlo? Por qué es mejor que el blue?</p>
+                        <a href="https://mailchi.mp/e043c0fcf396/dolarmepladyahorro" class="btn btn-primary">Más información</a>
+                    </div>
+                </div>
+                <div class="campus-item has-image">
+                    <img class="" src="/assets/images/anterior1.png">
+                </div>
+                <div class="campus-item">
+                    <div class="">
+                        <span class="iconito material-icons">devices</span>
+                        <h2>Digitalizá tus finanzas</h2>
+                        <p>Aprendé a manejar tus finanzas online, sin salir de tu casa. Animáte!</p>
+                        <a href="https://mailchi.mp/943e109fd57f/digitaliza-tus-finanzas-ladyahorro" class="btn btn-primary">Más información</a>
+                    </div>
+                </div>
+
+            </div>
         </main>
-        <footer class="footer">
-            <div class="logoFooter">
-                <img src="./logoNegro.png"></img>
+        <footer>
+            <div class="logoWraper">
+                <img class="logo logoFooter" src="assets/images/logoNegro.png"></img>
             </div>
             <div class="redes">
                 <h3>NUESTRAS REDES</h3>
-                <a href="https://www.facebook.com/Lady-Ahorro-103293524538487"><img class="logoRedes" src="./facebook.png"></img></a>
-                <a href="https://www.instagram.com/ladyahorro/"><img class="logoRedes" src="./instagram.png"></img></a>
+                <a href="https://www.facebook.com/Lady-Ahorro-103293524538487"><img class="logoRedes" src="assets/images/facebook.png"></img></a>
+                <a href="https://www.instagram.com/ladyahorro/"><img class="logoRedes" src="assets/images/instagram.png"></img></a>
             </div>
             <div class="contactoFooter">
-                <h3>CONTACTO</h3>
                 <p><i class="material-icons">mail</i>info@ladyahorro.com</p>
                 <p><i class="material-icons">call</i>1121626132</p>
                 <p><i class="material-icons">room</i>Buenos Aires, Argentina.</p>

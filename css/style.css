@@ -15,6 +15,10 @@
   color: rgba(39, 39, 39, 0.8);
   line-height: 2; }
 
+.lead span {
+  font-size: 20px;
+  color: #ca5fff; }
+
 ul.list {
   list-style-type: none;
   padding-left: 0; }
@@ -184,6 +188,24 @@ ul.list {
     font-weight: bold;
     color: rgba(39, 39, 39, 0.3);
     margin-bottom: 0; }
+
+.campus-grid {
+  margin: 3rem;
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  grid-auto-rows: minmax(300px, 1fr);
+  gap: 2rem;
+  position: relative; }
+  .campus-grid .campus-item {
+    background-color: #fff; }
+    .campus-grid .campus-item.has-image {
+      background: linear-gradient(315deg, #d5cbfd 0%, #ca5fff 74%); }
+      .campus-grid .campus-item.has-image img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+        filter: grayscale(1);
+        opacity: 0.5; }
 
 /*!
  * Bootstrap v4.5.0 (https://getbootstrap.com/)
@@ -7348,17 +7370,14 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6; } }
 
-section {
-  padding: 2rem 0; }
+.logoWraper {
+  position: relative; }
 
-body {
-  font-family: 'Poppins', sans-serif;
-  margin: 0; }
+.logo {
+  position: absolute; }
 
-#root {
-  height: 100%; }
-
-.header {
+/* HEADER */
+header {
   grid-area: header;
   display: flex;
   justify-content: space-between;
@@ -7367,6 +7386,11 @@ body {
   padding: 0.5rem;
   padding-right: 15rem;
   overflow: hidden; }
+
+.logo.logoHeader {
+  top: -50px;
+  height: 7rem;
+  left: 100px; }
 
 .headerLinks a:hover {
   color: black;
@@ -7380,15 +7404,6 @@ body {
   text-decoration: none;
   margin-left: 10px; }
 
-.logoHeader {
-  margin-left: 100px;
-  position: relative; }
-
-.logoHeader img {
-  height: 15rem;
-  position: absolute;
-  top: -65px; }
-
 .headerLinks a {
   color: black;
   text-decoration: none;
@@ -7396,37 +7411,6 @@ body {
 
 .main {
   grid-area: main; }
-
-.footer {
-  grid-area: footer;
-  background-color: #d5cbfd;
-  color: black;
-  display: flex;
-  justify-content: space-around;
-  align-items: center; }
-
-.logoFooter {
-  height: 14rem; }
-
-.logoFooter img {
-  height: 14rem; }
-
-.redes a {
-  opacity: .7; }
-
-.redes a:hover {
-  opacity: 1;
-  cursor: pointer; }
-
-.redes {
-  text-align: center; }
-
-.contactoFooter p {
-  font-size: 1.5rem; }
-
-.contactoFooter i {
-  font-size: 1.5rem;
-  margin-right: .5rem; }
 
 a {
   text-decoration: none; }
@@ -7478,6 +7462,75 @@ a:hover {
   position: absolute;
   right: .5rem;
   top: 1.5rem; }
+
+/* FOOTER */
+footer {
+  grid-area: footer;
+  background-color: #d5cbfd;
+  color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem; }
+  footer h3 {
+    text-align: center;
+    font-size: 1.2rem; }
+
+.logo.logoFooter {
+  position: relative;
+  height: 10rem; }
+
+.redes a {
+  opacity: .7; }
+
+.redes a:hover {
+  opacity: 1;
+  cursor: pointer; }
+
+.redes {
+  text-align: center; }
+
+.contactoFooter p {
+  font-size: .9rem;
+  margin-bottom: .5rem; }
+
+.contactoFooter i {
+  font-size: 1rem;
+  margin-right: .5rem; }
+
+/* CONTACTO */
+.portadaContacto {
+  margin: 1.2rem 0; }
+
+.imgRedesPeque {
+  width: 1.3rem; }
+
+.iconito {
+  color: #ca5fff;
+  background-color: #d5cbfd;
+  padding: 1rem;
+  width: 56px;
+  height: 56px;
+  margin-bottom: 1rem;
+  margin-right: 1rem; }
+
+section {
+  padding: 2rem 0; }
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0; }
+
+a:hover {
+  text-decoration: none; }
+
+.gridContainer {
+  display: grid;
+  grid-template-areas: "header" "main" "footer";
+  grid-template-rows: 5rem 1fr 10rem; }
+
+#root {
+  height: 100%; }
 
 /* CAROUSEL  */
 .carouselSection {
@@ -7588,56 +7641,6 @@ a:hover {
 .grillaConfian img {
   width: 150px; }
 
-/* CONTACTO */
-.portadaContacto {
-  max-width: 1200px;
-  margin: 5rem auto;
-  color: black;
-  background-color: #d5cbfd;
-  text-align: left;
-  display: grid;
-  grid-template-columns: 1fr 1fr; }
-
-.portadaContacto a {
-  text-decoration: none;
-  color: black; }
-
-.infoContactoItem:hover {
-  text-shadow: 0.5px 0.5px rgba(0, 0, 0, 0.2);
-  cursor: pointer; }
-
-.imgContacto {
-  overflow: hidden;
-  height: 800px;
-  position: relative; }
-
-.imgContacto img {
-  opacity: .6;
-  position: absolute;
-  top: -100px;
-  left: -700px;
-  transform: scale(0.9); }
-
-.infoContacto {
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  height: 60%;
-  margin: auto; }
-
-.infoContacto h2 {
-  font-size: 3rem; }
-
-.infoContacto img {
-  width: 2.5rem; }
-
-.infoContacto h3 {
-  display: inline-block; }
-
-.infoContacto img, i {
-  margin-right: 2rem; }
-
 /* NO BLOG */
 .noBlog {
   max-width: 1500px;
@@ -7705,7 +7708,6 @@ a:hover {
   font-size: 1.2rem;
   background-color: #d5cbfd; }
 
-/* CONSULTORIAS */
 .contenedorSeparador {
   display: flex;
   justify-content: space-around;
