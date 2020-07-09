@@ -1,0 +1,80 @@
+/* CAROUSEL  */
+
+.carouselSection {
+    max-width: 1500px;
+    margin: 3rem auto;
+}
+
+/* SERVICIOS  */
+
+.servicios {
+    margin: 2rem 0 2rem 0;
+}
+
+.gridServicios {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.cajaTextoServicio {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #f5efff;
+    overflow: hidden;
+    position: relative;
+    max-width: 100%;
+    background-color: rgb(82, 0, 136);
+    transition: 0.4s ease-out;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    transition: 0.4s ease-out;
+}
+
+.data {
+    padding: 1rem;
+    position: absolute;
+    opacity: 0;
+    transform: translateY(30px);
+    text-align: center;
+    transition: 0.4s ease-out;
+}
+
+.data h2 {
+    font-size: 2rem;
+}
+
+.cajaTextoServicio:hover .image {
+    transform: scale(1.2);
+    opacity: 0.4;
+}
+
+.cajaTextoServicio:hover .data {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* COFIAN  */
+
+.confian {
+    margin: 2rem auto 2rem auto;
+    max-width: 1200px;
+}
+
+.grillaConfian {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+}
+
+.grillaConfian img {
+    width: 150px;
+}
