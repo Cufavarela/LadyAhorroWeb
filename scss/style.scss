@@ -1,0 +1,122 @@
+
+* {box-sizing: border-box;}
+
+@import "variables";
+@import "typography";
+@import "consultoria";
+@import "campus";
+@import "home";
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "headerAndFooter";
+@import "contacto";
+
+
+
+
+section {padding: 2rem 0;}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+a:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-areas: "header"
+    "main"
+    "footer";
+    grid-template-rows: 5rem 1fr 10rem;
+}
+
+  #root {
+    height: 100%;
+  }
+
+/* NO BLOG */
+
+
+
+.noBlog {
+    max-width: 1200px;
+    margin: auto;
+    color: black;
+    background-color: #d5cbfd;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.proximamente {
+    margin: auto;
+}
+
+.proximamente h1 {
+    font-size: 3rem;
+    color: white;
+}
+
+.proximamente span {
+    color: white;
+    font-size: 3rem;
+}
+
+.proximamenteImg {
+    overflow: hidden;
+    height: 800px;
+    position: relative;
+}
+
+#fondo {
+    opacity: .6;
+    position: absolute;
+    left: -350px;
+}
+
+#logoBlog {
+    position: absolute;
+    width: 25rem;
+    top: 250px;
+    left: 110px;
+}
+
+
+/* REPONSIVENESS */
+
+@media (max-width: 576px) {
+
+    .sidebar {
+        display: block;
+        a {
+            font-size: 2rem;
+        }
+        ul {
+            margin-top: 4rem;
+        }
+
+        ul li {
+            margin: 1rem
+        }
+    }
+
+    .headerLinks {
+        display: none;
+    }
+
+    .brand {
+        display: flex;
+        button {
+            display: block;
+        }
+    }
+
+    .introduccion-image {
+        &::before {
+            left: 3%;
+        }
+    }
+}

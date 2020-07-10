@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Lady Ahorro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" href="/assets/images/logolady.ico.jpg" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="gridContainer">
+        <header>
+            <div class="brand">
+                <button onclick="openMenu()">
+                    &#9776;
+                </button>
+            </div>
+            <div class="logoWraper">
+                <a href="./index.html"><img class="logo logoHeader" src="assets/images/logoNegro.png" alt="logolady"></a>
+            </div>
+            <div class="headerLinks">
+                <a href="./index.html">Inicio</a>
+                <a href="./consultoria.html">Consultorías</a>
+                <a href="./campus.html">Campus</a>
+                <a href="./contacto.html">Contacto</A>
+            </div>
+        </header>
+        <aside class="sidebar">
+            <button class="sidebarCloseBoton" onclick="closeMenu()">x</button>
+            <ul>
+                <li>
+                    <a href="./index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="./consultoria.html">Consultorías</a>
+                </li>
+                <li>
+                    <a href="./campus.html">CampusLady</a>
+                </li>
+                <li>
+                    <a href="./blog.html">LadyBlog</a>
+                </li>
+                <li>
+                    <a href="./contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </aside>
+        <main>
+            <section class="consultoria-introduccion">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h2 class="small-header">Consultoría</h2>
+                            <h1 class="main-header">Consultorías personalizadas podemos lograr eso que te propones</h1>
+                            <p class="lead">Ya sea salir de tus deudas, ahorrar para esas vacaciones, y simplemente poner tus números en orden. No quiero dejar de aclarar que todas los objetivos que uno se propone implican un esfuerzo, asique por más consejos y truquitos que yo te pueda brindar, todo depende de vos, y de las ganas que le pongas a organizar y mantener tus finanzas!</p>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="introduccion-image">
+                                <img src="/assets/images/fotolady.jpeg" alt="Lady Ahorro" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="consultoria-grid">
+                    <div class="consultoria-item">
+                        <div class="inner-side front">
+                            <span class="icon material-icons">trending_up</span>
+                            <h2>Orientación en Inversiones</h2>
+                            <p>¿Te gustaría empezar a invertir por tu cuenta pero no estas seguro de cómo ni en qué?</p>
+                            <div class="arrow" onclick="gridToggler(event);">
+                                <span class="material-icons">trending_flat</span>
+                            </div>
+                        </div>
+                        <div class="inner-side back">
+                            <span class="icon material-icons">trending_up</span>
+                            <h2>Orientación en Inversiones</h2>
+                            <ul class="list">
+                                <li>Se analiza la situación en la que la persona se encuentra actualmente.</li>
+                                <li>Se define el perfil de inversor, para que realmente puedas entender qué es lo más adecuado, y de esta forma orientar sobre las distintas alternativas de inversión afines a ese perfil.</li>
+                                <li>Explicación y asistencia, si así lo deseas, en la apertura de su cuenta comitente.</li>
+                                <li>Manual ABC de las cuentas comitentes.</li>
+                                <li>Explicación de instrumentos afines al perfil evaluado para que puedas decidir en cuál invertir, en base a tu propia decisión y sin depender de un asesor.</li>
+                            </ul>
+                            <div class="arrow" onclick="gridToggler(event);">
+                                <span class="material-icons">trending_flat</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="consultoria-item has-image">
+                        <img src="assets/images/graph.jpg" alt="">
+                    </div>
+                    <div class="consultoria-item">
+                        <div class="inner-side front">
+                            <span class="icon material-icons">fact_check</span>
+                            <h2>Packs estratégicos para cumplir tus objetivos</h2>
+                            <p>¿Tenés un objetivo pero <b>no sabes cómo organizarte para alcanzarlo</b>?</p>
+                            <div class="arrow" onclick="gridToggler(event);">
+                                <span class="material-icons">trending_flat</span>
+                            </div>
+                        </div>
+                        <div class="inner-side back">
+                            <span class="icon material-icons">fact_check</span>
+                            <h2>Packs estratégicos para cumplir tus objetivos</h2>
+                            <p>Vamos a armar un plan personalizado, estratégico y probado para lograrlo tus objetivos</p>
+                            <h3><span class="hashtag">#MétodoLady</span></h3>
+                            <p>Consiste en 3 asesorías, en las cuales nos conocemos, hablamos de tus objetivos, y en base a tu situación, confeccionamos un plan de acción adaptado a vos listo para usar.
+                            <br>Vamos a elaborarlo buscando que sea sostenible en el tiempo y te permita automatizar el ahorro para conseguir tu objetivo.</p>
+                            <div class="arrow" onclick="gridToggler(event);">
+                                <span class="material-icons">trending_flat</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="consultoria-item is-empty"></div>
+                    <div class="consultoria-item is-empty"></div>
+                    <div class="consultoria-item">
+                        <div class="inner-side front">
+                            <span class="icon material-icons">face</span>
+                            <h2>Presupuesto Personalizado</h2>
+                            <p>La clave de las finanzas personales, en tus manos.</p>
+                            <div class="arrow" onclick="gridToggler(event);">
+                                <span class="material-icons">trending_flat</span>
+                            </div>
+                        </div>
+                        <div class="inner-side back">
+                            <span class="icon material-icons">face</span>
+                            <h2>Presupuesto Personalizado</h2>
+                            <ul class="list">
+                                <li>Primer encuentro de 40 minutos donde nos conocemos y me comentas tu situación, para que de esta forma pueda armar un presupuesto acorde a tus necesidades.</li>
+                                <li>Segundo encuentro, de una hora, donde te presento el presupuesto personalizado, te explico cómo utilizarlo y proyectamos el primer mes en conjunto.</li>
+                            </ul>
+                            <p><b>¿Empezamos?</b></p>
+                            <div class="arrow" onclick="gridToggler(event);">
+                                <span class="material-icons">trending_flat</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="consultoria-item has-image">
+                        <img src="assets/images/coins.jpg" alt="">
+                    </div>
+                    <div class="consultoria-item">
+                        <div class="inner-side">
+                            <span class="icon material-icons">store</span>
+                            <h2>Consultoría Emprendedora</h2>
+                            <p>Encuentro para tratar temas puntuales <b>económicos o financieros</b> a mejorar de tu emprendimiento.</p>
+                        </div>
+                    </div>
+                    <div class="consultoria-item">
+                        <div class="inner-side">
+                            <span class="icon material-icons">flash_on</span>
+                            <h2>Consultoría Expréss - Finanzas Personales</h2>
+                            <p>¿Tenés preguntas y dudas que necesitas resolver para <b>perfeccionar tus finanzas personales?</b></p>
+                        </div>
+                    </div>
+                    <div class="consultoria-item has-image">
+                        <img src="/assets/images/black-and-silver-laptop-computer-on-round-brown-wooden-table-1181243.jpg">
+                    </div>
+                    <div class="consultoria-item">
+                        <div class="inner-side front">
+                            <span class="icon material-icons">security</span>
+                            <h2>Pack <span class="hashtag">#ChauDeudas</span></h2>
+                            <p>¿Te preocupan tus deudas? Encuentros focalizados exclusivamente <b>en saldar tus deudas.</b></p>
+                            <div class="arrow" onclick="gridToggler(event);">
+                                <span class="material-icons">trending_flat</span>
+                            </div>
+                        </div>
+                        <div class="inner-side back">
+                            <span class="icon material-icons">security</span>
+                            <h2><span class="hastag">#ChauDeudas</span></h2>
+                            <ul class="list">
+                                <li>Te propongo reunirnos en 2 encuentros focalizados exclusivamente en saldar tus deudas.</li>
+                                <li>Analizamos tu situación económico / financiera.</li>
+                                <li>Organizamos un plan personalizado de acción.</li>
+                            </ul>
+                            <div class="arrow" onclick="gridToggler(event);">
+                                <span class="material-icons">trending_flat</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="consultoria-item has-image">
+                        <img src="assets/images/accounting.jpg" alt="">
+                    </div>
+                </div>
+            </section>
+            <section class="not-sure">
+                <div class="container">
+                    <div class="row justify-content-end">
+                        <div class="col-lg-6 align-self-end">
+                            <img src="assets/images/opened.svg" class="img-fluid">
+                        </div>
+                        <div class="col-lg-6">
+                            <h3 class="small-header">¿Necesitás ayuda?</h3>
+                            <h2>Reservá una cita de orientanción*, gratuita y sin compromiso</h2>
+                            <p class="lead">Si aún no estás seguro de qué te conviene, vas a conocer más del <span class="hashtag font-weight-bold">#MétodoLady</span> y sacarte todas las dudas.
+                            <br>En caso de estar interesado, vamos a avanzar con la consultoría más conveniente para vos.</p>
+                            <a href="https://api.whatsapp.com/send?phone=541121626132&text=Hola%2C%20me%20gustaría%20charlar%20sobre%20las%20consultorías,%20gracias" class="btn btn-primary btn-cta">Reservar</a>
+                            <p class="annotation">* según disponibilidad</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="logoWraper">
+                <img class="logo logoFooter" src="assets/images/logoNegro.png"></img>
+            </div>
+            <div class="redes">
+                <h3>NUESTRAS REDES</h3>
+                <a href="https://www.facebook.com/Lady-Ahorro-103293524538487"><img class="logoRedes" src="assets/images/facebook.png"></img></a>
+                <a href="https://www.instagram.com/ladyahorro/"><img class="logoRedes" src="assets/images/instagram.png"></img></a>
+            </div>
+            <div class="contactoFooter">
+                <p><i class="material-icons">mail</i>info@ladyahorro.com</p>
+                <p><i class="material-icons">call</i>1121626132</p>
+                <p><i class="material-icons">room</i>Buenos Aires, Argentina.</p>
+            </div>
+        </footer>
+    </div>
+    <script>
+        function openMenu () {
+            document.querySelector(".sidebar").classList.add("open")
+        }
+        function closeMenu () {
+            document.querySelector(".sidebar").classList.remove("open")
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script>
+        function gridToggler(e) {
+            const SHOW_BACK_CLASS = "show-back";
+            const abuelo = e.target.parentNode.parentNode;
+            if(e.target) {
+                if (!abuelo.classList.contains(SHOW_BACK_CLASS)) {
+                    document.querySelectorAll('.consultoria-grid .'+SHOW_BACK_CLASS).forEach(function(ele) {
+                        ele.classList.remove(SHOW_BACK_CLASS);
+                    });
+                    abuelo.classList.add(SHOW_BACK_CLASS);
+                } else {
+                    abuelo.classList.remove(SHOW_BACK_CLASS);
+                }
+                return true;
+            }
+            return false;
+        }
+    </script>
+</body>
+</html>

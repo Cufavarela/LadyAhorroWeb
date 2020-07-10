@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" href="/logolady.ico.jpg" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lady Ahorro</title>
+</head>
+<body>
+    <div class="gridContainer">
+        <header class="header">
+            <div class="logoHeader">
+                <a href="./index.html"><img src="./logoNegro.png" alt="logolady"></a>
+            </div>
+            <div class="brand">
+                <button onclick="openMenu()">
+                    &#9776;
+                </button>
+            </div>
+            <div class="headerLinks">
+                <a href="./index.html">Inicio</a>
+                <a href="./consulto.html">Consultorías</a>
+                <a href="./campus.html">LadyCampus</a>
+                <a href="./contacto.html">Contacto</A>
+            </div>
+        </header>
+        <aside class="sidebar">
+            <h3>Lady Ahorro</h3>
+            <button class="sidebarCloseBoton" onclick="closeMenu()">x</button>
+            <ul>
+                <li>
+                    <a href="./index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="./index.html">Consultorías</a>
+                </li>
+                <li>
+                    <a href="./index.html">LadyCampus</a>
+                </li>
+                <li>
+                    <a href="./index.html">Contacto</a>
+                </li>
+            </ul>
+        </aside>
+        <main class="main">
+            <section class="portadaContacto">
+                <div class="imgContacto">
+                    <img src="./contactoImg.jpeg" alt="fotoContacto">
+                </div>
+                <div class="infoContacto">
+                    <a href="./contacto.html">
+                        <div id="titulo" class="infoContactoItem">
+                            <h2>Contacto</h2>
+                        </div>
+                    </a>
+                    <a href="mailto:info@ladyahorro.com">
+                        <div id="mail" class="infoContactoItem">
+                            <h3><i class="material-icons">mail</i>info@ladyahorro.com</h3>
+                        </div>
+                    </a>
+                    <a href="https://api.whatsapp.com/send?phone=541121626132">
+                        <div id="telefono" class="infoContactoItem">
+                            <h3><i class="material-icons">call</i>1121626132</h3>
+                        </div>
+                    </a>
+                    <a href="https://www.google.com/maps/place/Buenos+Aires,+CABA/@-34.6157437,-58.5733832,11z/data=!3m1!4b1!4m5!3m4!1s0x95bcca3b4ef90cbd:0xa0b3812e88e88e87!8m2!3d-34.6036844!4d-58.3815591">
+                        <div id="dire" class="infoContactoItem">
+                            <h3><i class="material-icons">room</i>Buenos Aires, Argentina.</h3>
+                        </div>
+                    </a>
+                    <a href="https://www.instagram.com/ladyahorro/">
+                        <div id="insta" class="infoContactoItem">
+                            <img src="./instagram.png"><h3>@ladyahorro</h3>
+                        </div>
+                    </a>
+                    <a href="https://www.facebook.com/Lady-Ahorro-103293524538487">
+                        <div id="face" class="infoContactoItem">
+                            <img src="./facebook.png"><h3>/Soyladyahorro</h3>
+                        </div>
+                    </a>
+                </div>
+            </section>
+            <section class="servicios">
+                <div class="gridServicios">
+                    <a href="./consulto.html">
+                        <div class="cajaTextoServicio rounded">
+                            <img src="./servicio1.jpg" alt="servicio" class="image" />
+                            <div class="data">
+                                <h2>Consultorías</h2>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="./blog.html">
+                        <div class="cajaTextoServicio rounded">
+                            <img src="./servicio2.jpg" alt="servicio" class="image" />
+                            <div class="data">
+                                <h2>Blog</h2>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="./campus.html">
+                        <div class="cajaTextoServicio rounded">
+                            <img src="./servicio3.jpg" alt="servicio" class="image" />
+                            <div class="data">
+                                <h2>LadyCampus</h2>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="./contacto.html">
+                        <div class="cajaTextoServicio rounded">
+                            <img src="./servicio4.jpg" alt="servicio" class="image" />
+                            <div class="data">
+                                <h2>Contacto</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="logoFooter">
+                <img src="./logoNegro.png"></img>
+            </div>
+            <div class="redes">
+                <h3>NUESTRAS REDES</h3>
+                <a href="https://www.facebook.com/Lady-Ahorro-103293524538487"><img class="logoRedes" src="./facebook.png"></img></a>
+                <a href="https://www.instagram.com/ladyahorro/"><img class="logoRedes" src="./instagram.png"></img></a>
+            </div>
+            <div class="contactoFooter">
+                <h3>CONTACTO</h3>
+                <p><i class="material-icons">mail</i>info@ladyahorro.com</p>
+                <p><i class="material-icons">call</i>1121626132</p>
+                <p><i class="material-icons">room</i>Buenos Aires, Argentina.</p>
+            </div>
+        </footer>
+    </div>
+    <script>
+        function openMenu () {
+            document.querySelector(".sidebar").classList.add("open")
+        }
+        function closeMenu () {
+            document.querySelector(".sidebar").classList.remove("open")
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+
+.resaltado {
+   font-size: 20px; color: $primary;
+}
+
+.campus-grid {
+    margin: 3rem;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-auto-rows: minmax(300px, 1fr);
+    gap: 2rem;
+    position: relative;
+    .campus-item {
+        background-color: #fff;
+        &.has-image {
+            img {
+                object-fit: cover;
+                height: 100%;
+                width: 100%;
+                opacity: 0.8;
+            }
+            background: $primary-gradient;
+        }
+    }
+}
