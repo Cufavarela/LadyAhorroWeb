@@ -5,35 +5,44 @@
     background-position: bottom left;
     background-repeat: repeat-x;
 }
-.introduccion-image {
-    padding-top: 1rem;
-    width: fit-content;
-    position: relative;
-    margin-bottom: 6rem;
-    img {
-        position: relative;
-        z-index: 3;
-    }
-    &::after, &::before {
-        position: absolute;
-        display: block;
-        content: "";
-    }
-    &::after {
-        z-index: 5;
-        left: 15%;
-        right: 15%;
-        top: 15%;
-        bottom: 15%;
-        border: 2px dashed white;
-    }
-    &::before {
-        left: 20%;
-        top: 10%;
+.consultoria-introduccion {
+    max-width: 100%;
+    overflow: hidden;
+    .introduccion-image {
+        padding-top: 1rem;
+        max-width: 100vw;
         width: 100%;
-        height: 100%;
-        background-color: $primary;
-        background-image: $primary-gradient;
+        position: relative;
+        display: block;
+        margin-bottom: 6rem;
+        img {
+            position: relative;
+            z-index: 3;
+        }
+        &::after, &::before {
+            position: absolute;
+            display: block;
+            transform-style: preserve-3d;
+            width: auto;
+            content: "";
+        }
+        &::after {
+            z-index: 5;
+            left: 15%;
+            right: 15%;
+            top: 15%;
+            bottom: 15%;
+            border: 2px dashed white;
+        }
+        &::before {
+            transform: translate(20%, 10%);
+            // left: 20%;
+            // top: 10%;
+            width: 100%;
+            height: 100%;
+            background-color: $primary;
+            background-image: $primary-gradient;
+        }
     }
 }
 
@@ -42,6 +51,9 @@
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     grid-auto-rows: minmax(400px, 1fr);
     position: relative;
+    @media (max-width: 767px) {
+        grid-auto-rows: minmax(400px, 1fr) 200px;
+    }
     .consultoria-item {
         background-color: #fff;
         .inner-side {
@@ -95,10 +107,10 @@
             }
             .list {
                 li {
-                    font-size: 1.2rem;
+                    font-size: 1rem;
                     &::before {
-                        font-size: 1.5rem;
-                        top: 4px;
+                        font-size: 1.3rem;
+                        top: 3px;
                         content: "check";
                     }
                 }
@@ -123,6 +135,21 @@
                     }
                 }
             }
+
+            @media (max-width: 767px) {
+                &.back {
+                    width: auto;
+                    box-shadow: none;
+                    display: flex;
+                }
+                &.front {
+                    display: none;
+                }
+                .arrow {
+                    display: none;
+                }
+            }
+
 
         }
         &.has-image {
@@ -150,6 +177,26 @@
             }
 
         }
+        // Mobile
+        @media (max-width: 767px) {
+            // &:nth-child(4) {
+            //     display: none;
+            // }
+            &:nth-child(5) {
+                grid-row-start: 6;
+            }
+            &:nth-child(7) {
+                grid-row-start: 8;
+            }
+            & + *:not(.has-image):not(.is-empty) {
+                border-top: 2px solid #eee;
+            }
+            &.has-image {
+                img {
+                    filter: contrast(130%) grayscale(1);
+                }
+            }
+        }
     }
 }
 
@@ -159,6 +206,13 @@
     img {
         transform: translateY(2rem) scale(1.25);
         transform-origin: right top;
+        @media (max-width: 767px) {
+            transform: none;
+            margin-top: 0;
+            margin-bottom: 3rem;
+            max-width: 100%;
+            height: auto;
+        }
     }
     .lead {
         margin-top: 2rem;
@@ -176,3 +230,4 @@
         margin-bottom: 0;
     }
 }
+

@@ -48,7 +48,7 @@
             </ul>
         </aside>
         <main>
-            <section class="consutoltoria-introduccion">
+            <section class="consultoria-introduccion">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6">
@@ -155,7 +155,9 @@
                             <p>¿Tenés preguntas y dudas que necesitas resolver para <b>perfeccionar tus finanzas personales?</b></p>
                         </div>
                     </div>
-                    <div class="consultoria-item is-empty"></div>
+                    <div class="consultoria-item has-image">
+                        <img src="/assets/images/black-and-silver-laptop-computer-on-round-brown-wooden-table-1181243.jpg">
+                    </div>
                     <div class="consultoria-item">
                         <div class="inner-side front">
                             <span class="icon material-icons">security</span>
@@ -231,11 +233,16 @@
     <script>
         function gridToggler(e) {
             const SHOW_BACK_CLASS = "show-back";
+            const abuelo = e.target.parentNode.parentNode;
             if(e.target) {
-                document.querySelectorAll('.consultoria-grid .'+SHOW_BACK_CLASS).forEach(function(ele) {
-                    ele.classList.remove(SHOW_BACK_CLASS);
-                });
-                e.target.parentNode.parentNode.classList.toggle(SHOW_BACK_CLASS);
+                if (!abuelo.classList.contains(SHOW_BACK_CLASS)) {
+                    document.querySelectorAll('.consultoria-grid .'+SHOW_BACK_CLASS).forEach(function(ele) {
+                        ele.classList.remove(SHOW_BACK_CLASS);
+                    });
+                    abuelo.classList.add(SHOW_BACK_CLASS);
+                } else {
+                    abuelo.classList.remove(SHOW_BACK_CLASS);
+                }
                 return true;
             }
             return false;
