@@ -56,38 +56,47 @@ ul.list {
   background-position: bottom left;
   background-repeat: repeat-x; }
 
-.introduccion-image {
-  padding-top: 1rem;
-  width: fit-content;
-  position: relative;
-  margin-bottom: 6rem; }
-  .introduccion-image img {
-    position: relative;
-    z-index: 3; }
-  .introduccion-image::after, .introduccion-image::before {
-    position: absolute;
-    display: block;
-    content: ""; }
-  .introduccion-image::after {
-    z-index: 5;
-    left: 15%;
-    right: 15%;
-    top: 15%;
-    bottom: 15%;
-    border: 2px dashed white; }
-  .introduccion-image::before {
-    left: 20%;
-    top: 10%;
+.consultoria-introduccion {
+  max-width: 100%;
+  overflow: hidden; }
+  .consultoria-introduccion .introduccion-image {
+    padding-top: 1rem;
+    max-width: 100vw;
     width: 100%;
-    height: 100%;
-    background-color: #ca5fff;
-    background-image: linear-gradient(315deg, #d5cbfd 0%, #ca5fff 74%); }
+    position: relative;
+    display: block;
+    margin-bottom: 6rem; }
+    .consultoria-introduccion .introduccion-image img {
+      position: relative;
+      z-index: 3; }
+    .consultoria-introduccion .introduccion-image::after, .consultoria-introduccion .introduccion-image::before {
+      position: absolute;
+      display: block;
+      transform-style: preserve-3d;
+      width: auto;
+      content: ""; }
+    .consultoria-introduccion .introduccion-image::after {
+      z-index: 5;
+      left: 15%;
+      right: 15%;
+      top: 15%;
+      bottom: 15%;
+      border: 2px dashed white; }
+    .consultoria-introduccion .introduccion-image::before {
+      transform: translate(20%, 10%);
+      width: 100%;
+      height: 100%;
+      background-color: #ca5fff;
+      background-image: linear-gradient(315deg, #d5cbfd 0%, #ca5fff 74%); }
 
 .consultoria-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   grid-auto-rows: minmax(400px, 1fr);
   position: relative; }
+  @media (max-width: 767px) {
+    .consultoria-grid {
+      grid-auto-rows: minmax(400px, 1fr) 200px; } }
   .consultoria-grid .consultoria-item {
     background-color: #fff; }
     .consultoria-grid .consultoria-item .inner-side {
@@ -134,10 +143,10 @@ ul.list {
         .consultoria-grid .consultoria-item .inner-side .arrow * {
           pointer-events: none; }
       .consultoria-grid .consultoria-item .inner-side .list li {
-        font-size: 1.2rem; }
+        font-size: 1rem; }
         .consultoria-grid .consultoria-item .inner-side .list li::before {
-          font-size: 1.5rem;
-          top: 4px;
+          font-size: 1.3rem;
+          top: 3px;
           content: "check"; }
       .consultoria-grid .consultoria-item .inner-side:hover .arrow {
         border-color: #ca5fff; }
@@ -151,6 +160,15 @@ ul.list {
           transform: scaleX(-1); }
         .consultoria-grid .consultoria-item .inner-side.back h2 ~ p {
           font-size: 1.2rem; }
+      @media (max-width: 767px) {
+        .consultoria-grid .consultoria-item .inner-side.back {
+          width: auto;
+          box-shadow: none;
+          display: flex; }
+        .consultoria-grid .consultoria-item .inner-side.front {
+          display: none; }
+        .consultoria-grid .consultoria-item .inner-side .arrow {
+          display: none; } }
     .consultoria-grid .consultoria-item.has-image {
       background: linear-gradient(315deg, #d5cbfd 0%, #ca5fff 74%); }
       .consultoria-grid .consultoria-item.has-image img {
@@ -165,6 +183,15 @@ ul.list {
       display: none; }
     .consultoria-grid .consultoria-item.show-back .inner-side.back {
       display: flex; }
+    @media (max-width: 767px) {
+      .consultoria-grid .consultoria-item:nth-child(5) {
+        grid-row-start: 6; }
+      .consultoria-grid .consultoria-item:nth-child(7) {
+        grid-row-start: 8; }
+      .consultoria-grid .consultoria-item + *:not(.has-image):not(.is-empty) {
+        border-top: 2px solid #eee; }
+      .consultoria-grid .consultoria-item.has-image img {
+        filter: contrast(130%) grayscale(1); } }
 
 .not-sure {
   padding: 3rem 0;
@@ -172,6 +199,13 @@ ul.list {
   .not-sure img {
     transform: translateY(2rem) scale(1.25);
     transform-origin: right top; }
+    @media (max-width: 767px) {
+      .not-sure img {
+        transform: none;
+        margin-top: 0;
+        margin-bottom: 3rem;
+        max-width: 100%;
+        height: auto; } }
   .not-sure .lead {
     margin-top: 2rem; }
   .not-sure .btn-cta {
