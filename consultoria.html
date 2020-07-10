@@ -2,13 +2,12 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <title>Lady Ahorro</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="icon" href="/assets/images/logolady.ico.jpg" type="image/gif" sizes="16x16">
     <link rel="stylesheet" href="css/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lady Ahorro</title>
 </head>
 <body>
     <div class="gridContainer">
@@ -24,7 +23,7 @@
             <div class="headerLinks">
                 <a href="./index.html">Inicio</a>
                 <a href="./consultoria.html">Consultorías</a>
-                <a href="./campus.html">CampusLady</a>
+                <a href="./campus.html">Campus</a>
                 <a href="./contacto.html">Contacto</A>
             </div>
         </header>
@@ -67,7 +66,7 @@
             </section>
             <section>
                 <div class="consultoria-grid">
-                    <div class="consultoria-item show-back">
+                    <div class="consultoria-item">
                         <div class="inner-side front">
                             <span class="icon material-icons">trending_up</span>
                             <h2>Orientación en Inversiones</h2>
@@ -82,7 +81,9 @@
                             <ul class="list">
                                 <li>Se analiza la situación en la que la persona se encuentra actualmente.</li>
                                 <li>Se define el perfil de inversor, para que realmente puedas entender qué es lo más adecuado, y de esta forma orientar sobre las distintas alternativas de inversión afines a ese perfil.</li>
-                                <li>Explicación y asistencia, si así lo deseas, en la apertura de su cuenta comitente.</p></li>
+                                <li>Explicación y asistencia, si así lo deseas, en la apertura de su cuenta comitente.</li>
+                                <li>Manual ABC de las cuentas comitentes.</li>
+                                <li>Explicación de instrumentos afines al perfil evaluado para que puedas decidir en cuál invertir, en base a tu propia decisión y sin depender de un asesor.</li>
                             </ul>
                             <div class="arrow" onclick="gridToggler(event);">
                                 <span class="material-icons">trending_flat</span>
@@ -106,7 +107,7 @@
                             <h2>Packs estratégicos para cumplir tus objetivos</h2>
                             <p>Vamos a armar un plan personalizado, estratégico y probado para lograrlo tus objetivos</p>
                             <h3><span class="hashtag">#MétodoLady</span></h3>
-                            <p>Consiste en 3 asesorías, en las cuales nos conocemos, hablamos de tus objetivos, y en base a tu situación, confeccionamos un plan de acción adaptado vos listo para usar.
+                            <p>Consiste en 3 asesorías, en las cuales nos conocemos, hablamos de tus objetivos, y en base a tu situación, confeccionamos un plan de acción adaptado a vos listo para usar.
                             <br>Vamos a elaborarlo buscando que sea sostenible en el tiempo y te permita automatizar el ahorro para conseguir tu objetivo.</p>
                             <div class="arrow" onclick="gridToggler(event);">
                                 <span class="material-icons">trending_flat</span>
@@ -116,10 +117,22 @@
                     <div class="consultoria-item is-empty"></div>
                     <div class="consultoria-item is-empty"></div>
                     <div class="consultoria-item">
-                        <div class="inner-side">
+                        <div class="inner-side front">
                             <span class="icon material-icons">face</span>
                             <h2>Presupuesto Personalizado</h2>
                             <p>La clave de las finanzas personales, en tus manos.</p>
+                            <div class="arrow" onclick="gridToggler(event);">
+                                <span class="material-icons">trending_flat</span>
+                            </div>
+                        </div>
+                        <div class="inner-side back">
+                            <span class="icon material-icons">face</span>
+                            <h2>Presupuesto Personalizado</h2>
+                            <ul class="list">
+                                <li>Primer encuentro de 40 minutos donde nos conocemos y me comentas tu situación, para que de esta forma pueda armar un presupuesto acorde a tus necesidades.</li>
+                                <li>Segundo encuentro, de una hora, donde te presento el presupuesto personalizado, te explico cómo utilizarlo y proyectamos el primer mes en conjunto.</li>
+                            </ul>
+                            <p><b>¿Empezamos?</b></p>
                             <div class="arrow" onclick="gridToggler(event);">
                                 <span class="material-icons">trending_flat</span>
                             </div>
@@ -130,6 +143,21 @@
                     </div>
                     <div class="consultoria-item">
                         <div class="inner-side">
+                            <span class="icon material-icons">store</span>
+                            <h2>Consultoría Emprendedora</h2>
+                            <p>Encuentro para tratar temas puntuales <b>económicos o financieros</b> a mejorar de tu emprendimiento.</p>
+                        </div>
+                    </div>
+                    <div class="consultoria-item">
+                        <div class="inner-side">
+                            <span class="icon material-icons">flash_on</span>
+                            <h2>Consultoría Expréss - Finanzas Personales</h2>
+                            <p>¿Tenés preguntas y dudas que necesitas resolver para <b>perfeccionar tus finanzas personales?</b></p>
+                        </div>
+                    </div>
+                    <div class="consultoria-item is-empty"></div>
+                    <div class="consultoria-item">
+                        <div class="inner-side front">
                             <span class="icon material-icons">security</span>
                             <h2>Pack <span class="hashtag">#ChauDeudas</span></h2>
                             <p>¿Te preocupan tus deudas? Encuentros focalizados exclusivamente <b>en saldar tus deudas.</b></p>
@@ -137,20 +165,17 @@
                                 <span class="material-icons">trending_flat</span>
                             </div>
                         </div>
-                    </div>
-                    <div class="consultoria-item">
-                        <div class="inner-side">
-                            <span class="icon material-icons">flash_on</span>
-                            <h2>Consultoría Expréss - Finanzas Personales</h2>
-                            <p>¿Tenés preguntas y dudas que necesitas para <b>perfeccionar tus finanzas personales?</b></p>
-                        </div>
-                    </div>
-                    <div class="consultoria-item is-empty"></div>
-                    <div class="consultoria-item">
-                        <div class="inner-side">
-                            <span class="icon material-icons">store</span>
-                            <h2>Consultoría Emprendedora</h2>
-                            <p>Encuentro para tratar temas puntuales <b>económicos o financieros</b> a mejorar de tu emprendimiento.</p>
+                        <div class="inner-side back">
+                            <span class="icon material-icons">security</span>
+                            <h2><span class="hastag">#ChauDeudas</span></h2>
+                            <ul class="list">
+                                <li>Te propongo reunirnos en 2 encuentros focalizados exclusivamente en saldar tus deudas.</li>
+                                <li>Analizamos tu situación económico / financiera.</li>
+                                <li>Organizamos un plan personalizado de acción.</li>
+                            </ul>
+                            <div class="arrow" onclick="gridToggler(event);">
+                                <span class="material-icons">trending_flat</span>
+                            </div>
                         </div>
                     </div>
                     <div class="consultoria-item has-image">
