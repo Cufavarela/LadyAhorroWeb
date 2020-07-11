@@ -84,74 +84,39 @@ a:hover {
     left: 110px;
 }
 
-/*  CAMPUS   */
 
-.portadaCampus {
-    max-width: 1200px;
-    margin: auto;
-    margin-top: 5rem;
+/* REPONSIVENESS */
+
+@media (max-width: 576px) {
+
+    .sidebar {
+        display: block;
+        a {
+            font-size: 2rem;
+        }
+        ul {
+            margin-top: 4rem;
+        }
+
+        ul li {
+            margin: 1rem
+        }
+    }
+
+    .headerLinks {
+        display: none;
+    }
+
+    .brand {
+        display: flex;
+        button {
+            display: block;
+        }
+    }
+
+    .introduccion-image {
+        &::before {
+            left: 3%;
+        }
+    }
 }
-
-.portadaCampus img {
-    margin: auto;
-}
-
-.cursosCards {
-    margin: 5rem auto 15rem auto;
-    max-width: 1300px;
-}
-
-.presentacionCursos {
-    margin: 2rem;
-}
-
-
-.presentacionCursos span {
-    color: darkorchid;
-    font-size: 2rem;
-}
-
-
-.card {
-    max-width: 300px;
-}
-
-.card h5 {
-    font-size: 2rem;
-}
-
-.card .btn {
-    font-size: 1.2rem;
-    background-color: #d5cbfd;
-}
-
-.contenedorSeparador {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 2rem;
-}
-
-.contenedorSeparador span {
-    color: darkorchid;
-    font-size: 1.8rem;
-}
-
-.separador {
-    background-color: darkorchid;
-    width: 50rem;
-    height: .1rem;
-}
-
-.bajada {
-    font-size: 1.5rem;
-    font-weight: 600;
-}
-
-.bajada a {
-    color: darkorchid;
-    font-size: 1.6rem;
-    text-decoration: none;
-}
-
-//

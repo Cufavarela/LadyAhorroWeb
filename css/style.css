@@ -207,6 +207,12 @@ ul.list {
         filter: grayscale(1);
         opacity: 0.5; }
 
+.main-header.recursos {
+  margin-bottom: 1.5rem; }
+
+.lead .leadLink {
+  color: #ca5fff; }
+
 /* CAROUSEL  */
 .carouselSection {
   max-width: 1500px;
@@ -267,7 +273,7 @@ ul.list {
 
 .grillaConfian {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   align-items: center; }
 
 .grillaConfian img {
@@ -7485,6 +7491,9 @@ a:hover {
   text-shadow: 0.5px 0.5px rgba(0, 0, 0, 0.2); }
 
 /* SIDEBAR */
+.brand {
+  display: none; }
+
 .brand button {
   font-size: 3rem;
   padding: .5rem;
@@ -7636,56 +7645,21 @@ a:hover {
   top: 250px;
   left: 110px; }
 
-/*  CAMPUS   */
-.portadaCampus {
-  max-width: 1200px;
-  margin: auto;
-  margin-top: 5rem; }
-
-.portadaCampus img {
-  margin: auto; }
-
-.cursosCards {
-  margin: 5rem auto 15rem auto;
-  max-width: 1300px; }
-
-.presentacionCursos {
-  margin: 2rem; }
-
-.presentacionCursos span {
-  color: darkorchid;
-  font-size: 2rem; }
-
-.card {
-  max-width: 300px; }
-
-.card h5 {
-  font-size: 2rem; }
-
-.card .btn {
-  font-size: 1.2rem;
-  background-color: #d5cbfd; }
-
-.contenedorSeparador {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: 2rem; }
-
-.contenedorSeparador span {
-  color: darkorchid;
-  font-size: 1.8rem; }
-
-.separador {
-  background-color: darkorchid;
-  width: 50rem;
-  height: .1rem; }
-
-.bajada {
-  font-size: 1.5rem;
-  font-weight: 600; }
-
-.bajada a {
-  color: darkorchid;
-  font-size: 1.6rem;
-  text-decoration: none; }
+/* REPONSIVENESS */
+@media (max-width: 576px) {
+  .sidebar {
+    display: block; }
+    .sidebar a {
+      font-size: 2rem; }
+    .sidebar ul {
+      margin-top: 4rem; }
+    .sidebar ul li {
+      margin: 1rem; }
+  .headerLinks {
+    display: none; }
+  .brand {
+    display: flex; }
+    .brand button {
+      display: block; }
+  .introduccion-image::before {
+    left: 3%; } }
