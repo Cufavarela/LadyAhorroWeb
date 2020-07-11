@@ -21,5 +21,16 @@
             }
             background: $primary-gradient;
         }
+        .icon {
+            color: $primary;
+            background-color: $secondary;
+            padding: 1rem;
+            display: block;
+            width: 56px;
+            height: 56px;
+            margin-bottom: 1rem;
+        }
+
     }
 }
+

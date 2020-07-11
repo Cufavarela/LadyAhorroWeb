@@ -3,15 +3,12 @@
 
 @import "variables";
 @import "typography";
+@import "home";
 @import "consultoria";
 @import "campus";
-@import "home";
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 @import "headerAndFooter";
 @import "contacto";
-
-
-
 
 section {padding: 2rem 0;}
 
@@ -31,6 +28,7 @@ a:hover {
     "main"
     "footer";
     grid-template-rows: 5rem 1fr 10rem;
+    height: 100vh;
 }
 
   #root {
@@ -82,39 +80,43 @@ a:hover {
     left: 110px;
 }
 
+@media (max-width: 767px) {
 
-/* REPONSIVENESS */
-
-@media (max-width: 576px) {
-
-    .sidebar {
-        display: block;
-        a {
-            font-size: 2rem;
-        }
-        ul {
-            margin-top: 4rem;
-        }
-
-        ul li {
-            margin: 1rem
-        }
+    .sectionNoBlog {
+        padding: 0;
     }
 
-    .headerLinks {
-        display: none;
-    }
-
-    .brand {
+    .noBlog {
         display: flex;
-        button {
-            display: block;
-        }
+        flex-direction: column;
     }
 
-    .introduccion-image {
-        &::before {
-            left: 3%;
+    .proximamenteImg {
+        height: 400px;
+
+        #fondo {
+            opacity: .6;
+            position: absolute;
+            left: -400px;
+            top: -340px;
+            transform: scale(0.8);
         }
+
+        #logoBlog {
+            display: none;
+        }
+
+    }
+
+    .proximamente {
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .servicios {
+        margin: 0;
+        padding: 0;
     }
 }

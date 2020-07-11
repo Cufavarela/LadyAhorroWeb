@@ -7,6 +7,10 @@
     color: $primary;
 }
 
+.portadaMobileWraper {
+    display: none;
+}
+
 
 /* CAROUSEL  */
 
@@ -23,7 +27,7 @@
 
 .gridServicios {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
 }
 
 .cajaTextoServicio {
@@ -65,6 +69,7 @@
 .cajaTextoServicio:hover .image {
     transform: scale(1.2);
     opacity: 0.4;
+    filter: grayscale(1);
 }
 
 .cajaTextoServicio:hover .data {
@@ -80,11 +85,55 @@
 }
 
 .grillaConfian {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    display: flex;
     align-items: center;
+    justify-content: space-around;
 }
 
 .grillaConfian img {
     width: 150px;
+}
+
+
+@media (max-width: 767px) {
+
+
+    /*PORATADA MOBILE */
+
+    .portadaMobileWraper {
+        display: block;
+        margin: 0;
+        padding: 0 ;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .carouselSection {
+        display: none;
+    }
+
+    .confian {
+        display: none;
+    }
+
+    .servicios {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    .cajaTextoServicio .image {
+        opacity: 0.6;
+        filter: grayscale(1);
+    }
+
+    .cajaTextoServicio .data {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+
+
+
 }
