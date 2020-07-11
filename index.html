@@ -11,9 +11,9 @@
 </head>
 <body>
     <div class="gridContainer">
-        <header class="header">
-            <div class="logoHeader">
-                <a href="./index.html"><img src="./logoNegro.png" alt="logolady"></a>
+        <header>
+            <div class="logoWraper">
+                <a href="./index.html"><img class="logo logoHeader" src="assets/images/logoNegro.png" alt="logolady"></a>
             </div>
             <div class="brand">
                 <button onclick="openMenu()">
@@ -55,13 +55,13 @@
                     </ol>
                     <div class="carousel-inner">
                       <div class="carousel-item active" data-interval="5000">
-                        <img src="./portada1.jpg" class="d-block w-100" alt="imgCarousel1">
+                        <img src="/assets/images/portada1.jpg" class="d-block w-100" alt="imgCarousel1">
                       </div>
                       <div class="carousel-item" data-interval="5000">
-                        <img src="./portada2.jpg" class="d-block w-100" alt="imgCarousel2">
+                        <img src="/assets/images/portada2.jpg" class="d-block w-100" alt="imgCarousel2">
                       </div>
                       <div class="carousel-item" data-interval="5000">
-                        <img src="./portada3.jpg" class="d-block w-100" alt="imgCarousel3">
+                        <img src="/assets/images/portada3.jpg" class="d-block w-100" alt="imgCarousel3">
                       </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -74,33 +74,29 @@
                     </a>
                   </div>
             </section>
-            <section class="sobreMi">
-                <div class="imgSobreLady">
-                    <img class="rounded-circle" src="./fotolady.jpeg" alt="SobreLady">
-                    <div class="circulo1"></div>
-                    <div class="circulo2"></div>
-                </div>
-                <div class="infoSobreLady">
-                    <h2>Sobre Lady</h2>
-                    <span class="material-icons">person_pin</span>
-                    <p>Mi nombre es Paula, soy estudiante de Actuario en la Facultad de Ciencias Económicas de la UBA,
-                        soy apasionada de las finanzas personales y las inversiones, y soy una creyente de que en la sociedad en la que
-                        vivimos, la educación e inclusión financiera necesita un papel más importante.</p>
-                    <span class="material-icons">menu_book</span>
-                    <p>Por eso es que existe Lady Ahorro, para poder aportar mi granito de arena, para que cualquiera conozca
-                        y entienda los instrumentos financieros que tiene disponibles. A travéz de diferente cursos, charlas
-                        y hasta consultorías personalizadas, es que realizo la tarea.</p>
-                    <span class="material-icons">favorite_border</span>
-                    <p>Te invito a seguirme en las redes, a leer mi blog, y a consultarme cualquier duda que tengas. La educación e inclusión
-                        financiera está al alcance de todos.</p>
-                    <span class="material-icons">trending_up</span>
+            <section class="consutoltoria-introduccion">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h2 class="small-header">Recursos</h2>
+                            <h1 class="main-header">Aprovechá todos estos materiales para mejorar tus finanzas:</h1>
+                            <p class="lead">#ChauDeudas: E-book gratuito para que deshacerte de tus deudas, sea menos difícil</p>
+                            <p class="lead">Presupuesto Personal: E-book gratuito para que comiences a ordenar tus finanzas. El presupuesto es la base para empezar a tener una economía saludable.</p>
+                            <p class="lead"><a>Podés reservar tu consultoría gratuita acá mismo.</a>¡Animate a vivir mejor!</p>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="introduccion-image">
+                                <img src="/assets/images/recursosfree.jpg" alt="Lady Ahorro" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
             <section class="servicios">
                 <div class="gridServicios">
                     <a href="./consultoria.html">
                         <div class="cajaTextoServicio rounded">
-                            <img src="./servicio1.jpg" alt="servicio" class="image" />
+                            <img src="/assets/images/servicio1.jpg" alt="servicio" class="image" />
                             <div class="data">
                                 <h2>Consultorías</h2>
                             </div>
@@ -108,7 +104,7 @@
                     </a>
                     <a href="./blog.html">
                         <div class="cajaTextoServicio rounded">
-                            <img src="./servicio2.jpg" alt="servicio" class="image" />
+                            <img src="/assets/images/servicio2.jpg" alt="servicio" class="image" />
                             <div class="data">
                                 <h2>Blog</h2>
                             </div>
@@ -116,7 +112,7 @@
                     </a>
                     <a href="./campus.html">
                         <div class="cajaTextoServicio rounded">
-                            <img src="./servicio3.jpg" alt="servicio" class="image" />
+                            <img src="/assets/images/servicio3.jpg" alt="servicio" class="image" />
                             <div class="data">
                                 <h2>CampusLady</h2>
                             </div>
@@ -124,7 +120,7 @@
                     </a>
                     <a href="./contacto.html">
                         <div class="cajaTextoServicio rounded">
-                            <img src="./servicio4.jpg" alt="servicio" class="image" />
+                            <img src="/assets/images/servicio4.jpg" alt="servicio" class="image" />
                             <div class="data">
                                 <h2>Contacto</h2>
                             </div>
@@ -135,25 +131,24 @@
             <section class="confian">
                 <h2>Confían el Lady Ahorro:</h2>
                 <div class="grillaConfian">
-                    <a href="https://www.instagram.com/capsulashowroom/"><img src="./LogoCapsulaCorto.png" alt="logo"></a>
-                    <a href="https://elclubdeemprendedoras.com/"><img src="./club.jpg" alt="logo"></a>
-                    <a href="https://www.instagram.com/geminisnailstudio/"><img src="./LogoGeminis.png" alt="logo"></a>
-                    <a href="http://nztstudios.com/"><img src="./NZT.png" alt="logo"></a>
-                    <a href="https://www.instagram.com/uirtus_asesoria/"><img src="./uirtus.jpg" alt="logo"></a>
+                    <a href="https://www.instagram.com/capsulashowroom/"><img src="/assets/images/LogoCapsulaCorto.png" alt="logo"></a>
+                    <a href="https://elclubdeemprendedoras.com/"><img src="/assets/images/club.jpg" alt="logo"></a>
+                    <a href="https://www.instagram.com/geminisnailstudio/"><img src="/assets/images/LogoGeminis.png" alt="logo"></a>
+                    <a href="http://nztstudios.com/"><img src="/assets/images/NZT.png" alt="logo"></a>
+                    <a href="https://www.instagram.com/uirtus_asesoria/"><img src="/assets/images/uirtus.jpg" alt="logo"></a>
                 </div>
             </section>
         </main>
-        <footer class="footer">
-            <div class="logoFooter">
-                <img src="./logoNegro.png"></img>
+        <footer>
+            <div class="logoWraper">
+                <img class="logo logoFooter" src="assets/images/logoNegro.png"></img>
             </div>
             <div class="redes">
                 <h3>NUESTRAS REDES</h3>
-                <a href="https://www.facebook.com/Lady-Ahorro-103293524538487"><img class="logoRedes" src="./facebook.png"></img></a>
-                <a href="https://www.instagram.com/ladyahorro/"><img class="logoRedes" src="./instagram.png"></img></a>
+                <a href="https://www.facebook.com/Lady-Ahorro-103293524538487"><img class="logoRedes" src="assets/images/facebook.png"></img></a>
+                <a href="https://www.instagram.com/ladyahorro/"><img class="logoRedes" src="assets/images/instagram.png"></img></a>
             </div>
             <div class="contactoFooter">
-                <h3>CONTACTO</h3>
                 <p><i class="material-icons">mail</i>info@ladyahorro.com</p>
                 <p><i class="material-icons">call</i>1121626132</p>
                 <p><i class="material-icons">room</i>Buenos Aires, Argentina.</p>
