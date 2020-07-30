@@ -11,6 +11,9 @@
     display: none;
 }
 
+.letraBlanca {
+    color: white;
+}
 
 /* CAROUSEL  */
 
@@ -133,7 +136,22 @@
         opacity: 1;
     }
 
+}
+
+.iconito.iconoHome {    /* falta */
+    padding: 11px;
+    width: 45px;
+    height: 45px;
+    margin-right: 1rem;
+}
 
 
-
+.lead.conTic::before {
+    display: inline-block;
+    transform-style: preserve-3d;
+    width: auto;
+    font-family: 'Material Icons';
+    content: "check";
+    color: $primary;
+    margin-right: .5rem;
 }

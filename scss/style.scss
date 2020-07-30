@@ -3,12 +3,13 @@
 
 @import "variables";
 @import "typography";
-@import "home";
 @import "consultoria";
 @import "campus";
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 @import "headerAndFooter";
 @import "contacto";
+@import "home";
+
 
 section {padding: 2rem 0;}
 
