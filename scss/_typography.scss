@@ -1,7 +1,13 @@
-.small-header {font-size: 18px; color: $primary;}
-.medium-header {font-size: 25px; color: $primary;}
-.main-header {font-size: 40px; color: $dark; margin-bottom: 1rem;}
-.lead {font-size: 18px; color: rgba(39, 39, 39, 0.8); line-height: 2;}
+:root {
+    @media(max-width: 576px) {
+        font-size: 13px;
+    }
+}
+
+.small-header {font-size: 1.225rem; color: $primary;}
+.medium-header {font-size: 1.5rem; color: $primary;}
+.main-header {font-size: 2.25rem; color: $dark; margin-bottom: 1rem;}
+.lead {font-size: 1.225rem; color: rgba(39, 39, 39, 0.8); line-height: 2;}
 
 ul.list {
     list-style-type: none;

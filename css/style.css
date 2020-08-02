@@ -2,20 +2,20 @@
   box-sizing: border-box; }
 
 .small-header {
-  font-size: 18px;
+  font-size: 1.225rem;
   color: #ca5fff; }
 
 .medium-header {
-  font-size: 25px;
+  font-size: 1.5rem;
   color: #ca5fff; }
 
 .main-header {
-  font-size: 40px;
+  font-size: 2.25rem;
   color: #272727;
   margin-bottom: 1rem; }
 
 .lead {
-  font-size: 18px;
+  font-size: 1.225rem;
   color: rgba(39, 39, 39, 0.8);
   line-height: 2; }
 
@@ -52,9 +52,6 @@ ul.list {
 .small-header {
   margin-bottom: 2rem; }
 
-.main-header {
-  margin-bottom: 1rem; }
-
 .medium-header {
   margin-bottom: 2.5rem; }
 
@@ -66,7 +63,7 @@ ul.list {
 .consultoria-introduccion {
   max-width: 100%;
   overflow: hidden;
-  margin: 2rem; }
+  padding: 2rem; }
   .consultoria-introduccion .introduccion-image {
     padding-top: 1rem;
     max-width: 100vw;
@@ -341,6 +338,7 @@ ul.list {
   box-sizing: border-box; }
 
 html {
+  max-width: 100%;
   font-family: sans-serif;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
@@ -350,6 +348,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block; }
 
 body {
+  max-width: 100%;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1rem;
@@ -7464,6 +7463,9 @@ a.text-dark:hover, a.text-dark:focus {
 
 .logoWraper {
   position: relative; }
+  @media (max-width: 768px) {
+  .logoWraper {
+    display: none; } }
 
 .logo {
   position: absolute; }
@@ -7528,7 +7530,8 @@ a:hover {
   transform: translateX(-31rem);
   width: 22rem;
   background-color: #d5cbfd;
-  height: 100%;
+  bottom: 0;
+  top: 0;
   color: white;
   padding: 2rem 1rem;
   z-index: 500;
@@ -7579,14 +7582,21 @@ footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  max-width: 100%;
+  overflow: hidden;
   padding: 2rem; }
+  @media(max-width: 767px) {
+    footer {
+      flex-direction: column; } }
+
   footer h3 {
     text-align: center;
     font-size: 1.2rem; }
 
 .logo.logoFooter {
   position: relative;
-  height: 10rem; }
+  max-width: 100%;
+  height: 120px; }
 
 .logosRedes {
   display: flex;
@@ -7667,6 +7677,9 @@ footer {
 .gridServicios {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); }
+  @media (max-width: 400px) {
+    .gridServicios {
+      grid-template-columns: 1fr; } }
 
 .cajaTextoServicio {
   height: 100%;
@@ -7773,12 +7786,10 @@ a:hover {
 
 .gridContainer {
   display: grid;
-  grid-template-areas: "header" "main" "footer";
-  grid-template-rows: 5rem 1fr 10rem;
-  height: 100vh; }
-
-#root {
-  height: 100%; }
+  grid-template-areas: "header"
+ "main"
+ "footer";
+  grid-template-rows: 5rem auto 10rem; }
 
 /* NO BLOG */
 .noBlog {
@@ -7841,3 +7852,7 @@ a:hover {
   .servicios {
     margin: 0;
     padding: 0; } }
+
+@media(max-width: 576px) {
+  :root {
+    font-size: 13px; } }
