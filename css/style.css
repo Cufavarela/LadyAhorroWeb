@@ -1,6 +1,10 @@
 * {
   box-sizing: border-box; }
 
+@media (max-width: 576px) {
+  :root {
+    font-size: 13px; } }
+
 .small-header {
   font-size: 1.225rem;
   color: #ca5fff; }
@@ -232,6 +236,9 @@ ul.list {
         height: 250px; }
         .consultoria-grid .consultoria-item.has-image img {
           filter: contrast(130%) grayscale(1); } }
+  @media (min-width: 300px) and (max-width: 449px) {
+    .consultoria-grid {
+      grid-template-columns: 1fr; } }
 
 .not-sure {
   padding: 3rem 0;
@@ -338,7 +345,6 @@ ul.list {
   box-sizing: border-box; }
 
 html {
-  max-width: 100%;
   font-family: sans-serif;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
@@ -348,7 +354,6 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block; }
 
 body {
-  max-width: 100%;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1rem;
@@ -7463,9 +7468,6 @@ a.text-dark:hover, a.text-dark:focus {
 
 .logoWraper {
   position: relative; }
-  @media (max-width: 768px) {
-  .logoWraper {
-    display: none; } }
 
 .logo {
   position: absolute; }
@@ -7482,8 +7484,8 @@ header {
   overflow: hidden; }
 
 .logo.logoHeader {
-  top: -50px;
-  height: 7rem;
+  top: -34px;
+  height: 4rem;
   left: 100px; }
 
 .headerLinks a:hover {
@@ -7582,13 +7584,12 @@ footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding: 2rem;
   max-width: 100%;
-  overflow: hidden;
-  padding: 2rem; }
-  @media(max-width: 767px) {
+  overflow: hidden; }
+  @media (max-width: 767px) {
     footer {
       flex-direction: column; } }
-
   footer h3 {
     text-align: center;
     font-size: 1.2rem; }
@@ -7631,7 +7632,9 @@ footer {
   .brand {
     display: flex; }
     .brand button {
-      display: block; } }
+      display: block; }
+  .logo {
+    display: none; } }
 
 /* CONTACTO */
 .portadaContacto {
@@ -7677,6 +7680,9 @@ footer {
 .gridServicios {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); }
+  @media (min-width: 1200px) and (max-width: 1600px) {
+    .gridServicios {
+      display: flex; } }
   @media (max-width: 400px) {
     .gridServicios {
       grid-template-columns: 1fr; } }
@@ -7773,12 +7779,16 @@ footer {
   color: #ca5fff;
   margin-right: .5rem; }
 
+html {
+  max-width: 100%; }
+
 section {
   padding: 2rem 0; }
 
 body {
   font-family: 'Poppins', sans-serif;
-  margin: 0; }
+  margin: 0;
+  max-width: 100%; }
 
 a:hover {
   text-decoration: none;
@@ -7786,9 +7796,7 @@ a:hover {
 
 .gridContainer {
   display: grid;
-  grid-template-areas: "header"
- "main"
- "footer";
+  grid-template-areas: "header" "main" "footer";
   grid-template-rows: 5rem auto 10rem; }
 
 /* NO BLOG */
@@ -7852,7 +7860,3 @@ a:hover {
   .servicios {
     margin: 0;
     padding: 0; } }
-
-@media(max-width: 576px) {
-  :root {
-    font-size: 13px; } }

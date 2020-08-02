@@ -21,8 +21,8 @@ header {
   }
 
   .logo.logoHeader {
-    top: -50px;
-    height: 7rem;
+    top: -34px;
+    height: 4rem;
     left: 100px;
   }
 
@@ -207,8 +207,7 @@ header {
           display: block;
       }
     }
-
-
-
-
+  .logo {
+    display: none;
+  }
 }
