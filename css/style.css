@@ -65,11 +65,12 @@ ul.list {
 
 .consultoria-introduccion {
   max-width: 100%;
-  overflow: hidden; }
+  overflow: hidden;
+  margin: 2rem; }
   .consultoria-introduccion .introduccion-image {
     padding-top: 1rem;
     max-width: 100vw;
-    width: 100%;
+    width: 80%;
     position: relative;
     display: block;
     margin-bottom: 6rem; }
