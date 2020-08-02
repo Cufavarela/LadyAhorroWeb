@@ -7581,6 +7581,8 @@ footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  max-width: 100%;
+  overflow: hidden;
   padding: 2rem; }
   footer h3 {
     text-align: center;
@@ -7588,7 +7590,8 @@ footer {
 
 .logo.logoFooter {
   position: relative;
-  height: 10rem; }
+  max-width: 100%;
+  height: auto; }
 
 .logosRedes {
   display: flex;
