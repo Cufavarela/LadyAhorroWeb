@@ -291,6 +291,14 @@ ul.list {
       height: 56px;
       margin-bottom: 1rem; }
 
+@media (max-width: 767px) {
+  .campus-grid {
+    grid-template-columns: 300px;
+    grid-auto-rows: minmax(300px, 1fr);
+    gap: 0px; }
+    .campus-grid .campus-item {
+      margin: 1rem 0 1rem 0; } }
+
 /*!
  * Bootstrap v4.5.0 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors
@@ -7519,7 +7527,7 @@ a:hover {
   transition: all .5s;
   transform: translateX(-31rem);
   width: 22rem;
-  background-color: #ca5fff;
+  background-color: #d5cbfd;
   height: 100%;
   color: white;
   padding: 2rem 1rem;
@@ -7532,15 +7540,15 @@ a:hover {
   padding: 0; }
 
 .sidebar ul li {
-  padding: 1rem;
-  margin: 1.2rem 0;
+  padding: .5rem;
+  margin: .8rem 0;
   background-color: #d5cbfd;
-  border: 2px solid white; }
+  /*border: 2px solid white;*/ }
 
 .sidebar a {
-  font-size: 2rem;
-  color: black;
-  text-shadow: 0.5px 0.5px rgba(0, 0, 0, 0.3); }
+  font-size: 1.7rem;
+  color: white;
+  text-shadow: 0.5px 0.5px rgba(0, 0, 0, 0.5); }
 
 .sidebar ul li a {
   text-decoration: none; }
@@ -7561,7 +7569,7 @@ a:hover {
   position: absolute;
   right: .5rem;
   top: 1.5rem;
-  background-color: #ca5fff; }
+  background-color: #d5cbfd; }
 
 /* FOOTER */
 footer {

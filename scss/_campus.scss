@@ -34,3 +34,14 @@
     }
 }
 
+@media (max-width: 767px) {
+    .campus-grid {
+        grid-template-columns: 300px;
+        grid-auto-rows: minmax(300px, 1fr);
+        gap: 0px;
+        .campus-item {
+            margin: 1rem 0 1rem 0;
+        }
+    }
+
+}

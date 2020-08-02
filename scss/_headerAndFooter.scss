@@ -79,7 +79,7 @@ header {
     transition: all .5s;
     transform: translateX(-31rem);
     width: 22rem;
-    background-color: $primary;
+    background-color: $secondary;
     height: 100%;
     color: white;
     padding: 2rem 1rem;
@@ -94,16 +94,16 @@ header {
   }
 
   .sidebar ul li {
-    padding: 1rem;
-    margin: 1.2rem 0;
+    padding: .5rem;
+    margin: .8rem 0;
     background-color: $secondary;
-    border: 2px solid white;
+    /*border: 2px solid white;*/
   }
 
   .sidebar a {
-    font-size: 2rem;
-    color: black;
-    text-shadow: .5px .5px rgba(0, 0, 0, .3);
+    font-size: 1.7rem;
+    color: white;
+    text-shadow: .5px .5px rgba(0, 0, 0, .5);
   }
 
   .sidebar ul li a {
@@ -127,7 +127,7 @@ header {
     position: absolute;
     right: .5rem;
     top: 1.5rem;
-    background-color: $primary;
+    background-color: $secondary;
   }
 
   /* FOOTER */
