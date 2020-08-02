@@ -29,13 +29,8 @@ a:hover {
     grid-template-areas: "header"
     "main"
     "footer";
-    grid-template-rows: 5rem 1fr 10rem;
-    height: 100vh;
+    grid-template-rows: 5rem auto 10rem;
 }
-
-  #root {
-    height: 100%;
-  }
 
 /* NO BLOG */
 
