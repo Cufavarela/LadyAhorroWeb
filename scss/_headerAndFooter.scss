@@ -140,6 +140,8 @@ header {
     justify-content: space-around;
     align-items: center;
     padding: 2rem;
+    max-width: 100%;
+    overflow: hidden;
 
     h3 {
       text-align: center;
@@ -149,7 +151,8 @@ header {
 
   .logo.logoFooter {
     position: relative;
-    height: 10rem;
+    max-width: 100%;
+    height: auto;
   }
 
   .logosRedes {
