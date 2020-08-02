@@ -7672,6 +7672,9 @@ footer {
 .gridServicios {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); }
+  @media (max-width: 400px) {
+    .gridServicios {
+      grid-template-columns: 1fr; } }
 
 .cajaTextoServicio {
   height: 100%;
